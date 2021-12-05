@@ -5,7 +5,7 @@
 #include "parsing.h"
 
 using namespace Parsing;
-int main(int argc, char *argv[]) {
+int main(int argc, const char *argv[]) {
   int day  = getCommandLineOption(argc, argv, "-d", 1);
   int part = getCommandLineOption(argc, argv, "-p", 1);
   bool test = getCommandLineOption(argc, argv, "-t", true);
