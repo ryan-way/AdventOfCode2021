@@ -6,24 +6,24 @@ int main() {
   int position = 0;
   int aim = 0;
 
-  while(!std::cin.eof()) {
+  while (!std::cin.eof()) {
     std::string command;
     int x;
 
     std::cin >> command;
     std::cin >> x;
 
-    if(command == "forward") {
+    if (command == "forward") {
       position += x;
-      depth += aim*x;
+      depth += aim * x;
     }
-    if(command == "up") {
+    if (command == "up") {
       aim -= x;
     }
-    if(command == "down") {
+    if (command == "down") {
       aim += x;
     }
   }
 
-  std::cout << depth*position << std::endl;
+  std::cout << depth * position << std::endl;
 }

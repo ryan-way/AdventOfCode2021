@@ -1,11 +1,11 @@
-#include <vector>
 #include <iostream>
+#include <vector>
 
 int main() {
-  std::vector<int> v { 1, 2, 3, 4, 5 };
+  std::vector<int> v{1, 2, 3, 4, 5};
 
-  for(auto it = v.begin(); it != v.end(); it++) {
-    if(*it == 5) v.erase(it);
+  for (auto it = v.begin(); it != v.end(); it++) {
+    if (*it == 5) v.erase(it);
     std::cout << *it << std::endl;
   }
 }
