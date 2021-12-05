@@ -22,9 +22,10 @@ cc_binary(
     )
 
 cc_test(
-    name = "hello_test",
+    name = "test",
     size = "small",
-    srcs = ["hello_test.cc"],
+    srcs = glob(["test/**/*.cpp"]),
+    includes = ["src"],
     deps = [
         "@com_google_googletest//:gtest_main",
         ":aoc_lib"
