@@ -27,6 +27,9 @@ int main(int argc, const char *argv[]) {
     case 3:
       std::cout << (part == 1 ? d3p1(ifile) : d3p2(ifile)) << std::endl;
       break;
+    case 4:
+      std::cout << (part == 1 ? d4p1(ifile) : d4p2(ifile)) << std::endl;
+      break;
 
   }
 }
