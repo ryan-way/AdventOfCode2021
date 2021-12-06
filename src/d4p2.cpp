@@ -4,7 +4,7 @@ int d4p2(std::ifstream &ifile) {
   std::string draw;
   getline(ifile, draw);
 
-  std::vector<int> drawList = createDrawList(draw);
+  std::vector<int> drawList = Parsing::csvLineToVector(draw);
   std::vector<std::vector<std::vector<int>>> boards;
   std::string dumb;
   while (1) {
@@ -13,7 +13,6 @@ int d4p2(std::ifstream &ifile) {
     boards.push_back(board);
   }
 
-  int count = 0;
   for (const int num : drawList) {
     for (auto it = boards.begin(); it != boards.end();) {
       removeValueFromBoard(*it, num);

@@ -4,6 +4,7 @@
 #include <fstream>
 #include <algorithm>
 #include <numeric>
+#include "parsing.h"
 
 std::vector<int> createDrawList(std::string draw); 
 std::vector<std::vector<int>> getBoard(std::ifstream &ifile);

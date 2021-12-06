@@ -1,5 +1,19 @@
 #include "parsing.h"
 
+std::vector<int> Parsing::csvLineToVector(std::string csvLine) {
+  std::stringstream ss(csvLine);
+  std::vector<int> csvList;
+
+  for (int num; ss >> num;) {
+    csvList.push_back(num);
+    if (ss.peek() == ',') {
+      ss.ignore();
+    }
+  }
+
+  return csvList;
+}
+
 int Parsing::getOptionIndex(int argc, const char* argv[], std::string option) {
   for(int i = 0; i < argc; i ++) {
     std::string target = argv[i];
