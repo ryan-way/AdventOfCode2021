@@ -18,6 +18,7 @@ cc_library(
 cc_binary(
     name = "aoc",
     srcs = ["src/main.cpp"],
+    data = glob(["data/**/*"]),
     deps = [":aoc_lib"]
     )
 
@@ -26,6 +27,7 @@ cc_test(
     size = "small",
     srcs = glob(["test/**/*.cpp"]),
     includes = ["src"],
+    data = glob(["data/**/*"]),
     deps = [
         "@com_google_googletest//:gtest_main",
         ":aoc_lib"

@@ -1,17 +1,16 @@
-#include <iostream>
+#include <fstream>
 
-int main() {
+int d1(std::ifstream ifile) {
   int increases = 0;
   int input;
   int previous;
-  std::cin >> input;
+  ifile >> input;
 
   previous = input;
-  while (std::cin >> input) {
+  while (ifile >> input) {
     increases += input > previous;
     previous = input;
   }
 
-  std::cout << increases << std::endl;
-  return 0;
+  return increases;
 }
