@@ -1,5 +1,5 @@
 #include <bitset>
-#include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -26,12 +26,12 @@ std::vector<int> filterByBitValue(const std::vector<int>& nums, int bit,
   return filtered;
 }
 
-int main() {
+int d3p2(std::ifstream &ifile) {
   std::string input;
   std::vector<int> nums;
   int maxBit = 0;
 
-  while (std::cin >> input) {
+  while (ifile >> input) {
     int value = std::stoi(input, 0, 2);
     while ((1 << (maxBit + 1)) < value) maxBit++;
     nums.push_back(value);
@@ -54,6 +54,5 @@ int main() {
     bit--;
   }
 
-  std::cout << co2[0] * oxygen[0] << std::endl;
-  return 0;
+  return co2[0] * oxygen[0];
 }

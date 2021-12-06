@@ -1,14 +1,14 @@
 #include <algorithm>
-#include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 
-int main() {
+int d3p1(std::ifstream &ifile) {
   int count = 0;
   std::string input;
   std::vector<int> totals{};
 
-  while (std::cin >> input) {
+  while (ifile >> input) {
     count += 1;
     int value = std::stoi(input, 0, 2);
 
@@ -22,14 +22,6 @@ int main() {
 
   std::reverse(totals.begin(), totals.end());
 
-  std::cout << "count: " << count << std::endl;
-  ;
-  std::cout << "result: ";
-  for (int i = 0; i < totals.size(); i++) {
-    std::cout << totals[i] << " ";
-  }
-  std::cout << std::endl;
-
   int gamma = 0;
   int mask = 0;
   for (int i = 0; i < totals.size(); i++) {
@@ -39,6 +31,5 @@ int main() {
     mask += 1;
   }
 
-  std::cout << gamma << std::endl;
-  std::cout << gamma * (gamma ^ mask) << std::endl;
+  return gamma * (gamma ^ mask);
 }

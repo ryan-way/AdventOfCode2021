@@ -66,3 +66,33 @@ TEST(d2p2, solve) {
   int part = 2;
   testRunner(day, part, test, d2p2, 1965970888);
 }
+
+
+TEST(d3p1, test) {
+  bool test = true;
+  int day = 3;
+  int part = 1;
+  testRunner(day, part, test, d3p1, 198);
+}
+
+TEST(d3p1, solve) {
+  bool test = false;
+  int day = 3;
+  int part = 1;
+  testRunner(day, part, test, d3p1, 3923414);
+}
+
+TEST(d3p2, test) {
+  bool test = true;
+  int day = 3;
+  int part = 2;
+  testRunner(day, part, test, d3p2, 230);
+}
+
+TEST(d3p2, solve) {
+  bool test = false;
+  int day = 3;
+  int part = 2;
+  testRunner(day, part, test, d3p2, 5852595);
+}
+
