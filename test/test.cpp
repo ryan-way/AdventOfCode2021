@@ -124,3 +124,32 @@ TEST(d4p2, solve) {
   testRunner(day, part, test, d4p2, 10030);
 }
 
+TEST(d5p1, test) {
+  bool test = true;
+  int day = 5;
+  int part = 1;
+  testRunner(day, part, test, d5p1, 5);
+}
+
+
+TEST(d5p1, solve) {
+  bool test = false;
+  int day = 5;
+  int part = 1;
+  testRunner(day, part, test, d5p1, 6311);
+}
+
+TEST(d5p2, test) {
+  bool test = true;
+  int day = 5;
+  int part = 2;
+  testRunner(day, part, test, d5p2, 12);
+}
+
+
+TEST(d5p2, solve) {
+  bool test = false;
+  int day = 5;
+  int part = 2;
+  testRunner(day, part, test, d5p2, 19929);
+}

@@ -30,6 +30,9 @@ int main(int argc, const char *argv[]) {
     case 4:
       std::cout << (part == 1 ? d4p1(ifile) : d4p2(ifile)) << std::endl;
       break;
+    case 5:
+      std::cout << (part == 1 ? d5p1(ifile) : d5p2(ifile)) << std::endl;
+      break;
 
   }
 }
