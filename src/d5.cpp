@@ -4,11 +4,7 @@
 int getInputNumber(std::stringstream &ss) {
   int num = 0;
   while(ss.peek() < '0' || ss.peek() > '9') ss.ignore();
-  while(ss.peek() >= '0' && ss.peek() <= '9') {
-    num *= 10;
-    num += ss.peek() - '0';
-    ss.ignore();
-  }
+  ss >> num;
   return num;
 }
 
