@@ -1,29 +1,27 @@
-#include <iostream>
+#include <fstream>
 #include <string>
 
-int main() {
+int d2p1(std::ifstream &ifile) {
   int depth = 0;
   int position = 0;
-  int aim = 0;
 
-  while (!std::cin.eof()) {
+  while (!ifile.eof()) {
     std::string command;
     int x;
 
-    std::cin >> command;
-    std::cin >> x;
+    ifile >> command;
+    ifile >> x;
 
     if (command == "forward") {
       position += x;
-      depth += aim * x;
     }
     if (command == "up") {
-      aim -= x;
+      depth -= x;
     }
     if (command == "down") {
-      aim += x;
+      depth += x;
     }
   }
 
-  std::cout << depth * position << std::endl;
+  return depth * position;
 }

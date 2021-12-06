@@ -19,7 +19,11 @@ int main(int argc, const char *argv[]) {
 
   switch(day) {
     case 1:
-      std::cout << d1p1(ifile) << std::endl;
+      std::cout << (part == 1 ? d1p1(ifile) : d1p2(ifile)) << std::endl;
       break;
+    case 2:
+      std::cout << (part == 1 ? d2p1(ifile) : d2p2(ifile)) << std::endl;
+      break;
+
   }
 }
