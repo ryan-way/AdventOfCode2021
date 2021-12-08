@@ -192,3 +192,31 @@ TEST(d6p2, solve) {
   int part = 2;
   testRunnerSize_t(day, part, test, d6p2, 1595330616005);
 }
+
+TEST(d7p1, test) {
+  bool test = true;
+  int day = 7;
+  int part = 1;
+  testRunner(day, part, test, d7p1, 37);
+}
+
+TEST(d7p1, solve) {
+  bool test = false;
+  int day = 7;
+  int part = 1;
+  testRunner(day, part, test, d7p1, 337488);
+}
+
+TEST(d7p2, test) {
+  bool test = true;
+  int day = 7;
+  int part = 1;
+  testRunner(day, part, test, d7p2, 168);
+}
+
+TEST(d7p2, solve) {
+  bool test = false;
+  int day = 7;
+  int part = 1;
+  testRunner(day, part, test, d7p2, 89647695);
+}
