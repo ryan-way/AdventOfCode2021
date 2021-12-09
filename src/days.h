@@ -14,3 +14,5 @@ int d6p1(std::ifstream &ifile);
 size_t d6p2(std::ifstream &ifile);
 int d7p1(std::ifstream &ifile);
 int d7p2(std::ifstream &ifile);
+int d8p1(std::ifstream &ifile);
+int d8p2(std::ifstream &ifile);
