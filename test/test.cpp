@@ -248,3 +248,31 @@ TEST(d8p2, solve) {
   int part = 2;
   testRunner(day, part, test, d8p2, 978171);
 }
+
+TEST(d9p1, test) {
+  bool test = true;
+  int day = 9;
+  int part = 1;
+  testRunner(day, part, test, d9p1, 15);
+}
+
+/* TEST(d9p1, solve) { */
+/*   bool test = false; */
+/*   int day = 9; */
+/*   int part = 1; */
+/*   testRunner(day, part, test, d9p1, 412); */
+/* } */
+
+TEST(d9p2, test) {
+  bool test = true;
+  int day = 9;
+  int part = 2;
+  testRunner(day, part, test, d9p2, 61229);
+}
+
+TEST(d9p2, solve) {
+  bool test = false;
+  int day = 9;
+  int part = 2;
+  testRunner(day, part, test, d9p2, 978171);
+}

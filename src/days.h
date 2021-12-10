@@ -16,3 +16,5 @@ int d7p1(std::ifstream &ifile);
 int d7p2(std::ifstream &ifile);
 int d8p1(std::ifstream &ifile);
 int d8p2(std::ifstream &ifile);
+int d9p1(std::ifstream &ifile);
+int d9p2(std::ifstream &ifile);
